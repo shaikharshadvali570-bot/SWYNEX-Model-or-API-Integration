@@ -1,0 +1,13 @@
+id,text,expected
+1,"URGENT: We detected a suspicious login. Your account will be closed in 24 hours. Verify your identity now http://192.168.1.10/secure-login",spam
+2,"Congratulations! You have WON a 500 gift voucher. Click here to claim your FREE prize now! Reply STOP to unsubscribe",spam
+3,"Hi team, can we move standup to 10:30 tomorrow? I will send the calendar invite shortly",ham
+4,"Your parcel could not be delivered. Pay the 1.99 customs fee within 12 hours at bit.ly/dlv-redir to reschedule",spam
+5,"Lunch at 1 pm today? There is a new place round the corner",ham
+6,"Dear customer your online banking has been locked. Sign in to unlock: http://secure-bank.verify-login.tk/update",spam
+7,"Can you pick up milk on the way home? Thanks!",ham
+8,"WINNER! You have been selected to receive 1000000 USD from the National Lottery. Claim within 48 hours by calling 09069775139",spam
+9,"Meeting notes attached. Please review section 3 before the call at 4 pm",ham
+10,"Final reminder: your invoice 2291 is overdue by 300. Pay now to avoid service suspension: http://billing-update.xyz/pay",spam
+11,"Could you send over the API docs when you get a chance? Cheers",ham
+12,"Your Apple ID was used to sign in from a new device. Confirm your identity at http://apple-id-verify.acount-support.top/act now",spam

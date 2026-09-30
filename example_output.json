@@ -1,0 +1,13 @@
+{
+  "verdict": "spam",
+  "risk_score": 0.785,
+  "spam_probability": 0.788,
+  "confidence": "medium",
+  "reasons": [
+    "Link points at a raw IP address",
+    "Asks for credentials, OTP or account details",
+    "Time pressure / threat of account loss",
+    "Contains an external link"
+  ],
+  "recommendation": "Do not click or reply. Delete the message, and if you already shared details, contact your bank/security team immediately."
+}

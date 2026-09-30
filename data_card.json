@@ -1,0 +1,35 @@
+{
+  "title": "SMS Spam Collection",
+  "source": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+  "licence": "CC BY 4.0 (UCI Machine Learning Repository)",
+  "citation": "Almeida, T., Gomez, J., & Hidalgo, J. (2011). Turn your spam filter on: Techniques to parse spamdaka. IDAAC 2011.",
+  "downloaded_at_utc": "2026-09-29T05:16:39+00:00",
+  "archive": {
+    "path": "data\\raw\\sms_spam_collection.zip",
+    "sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+    "mirrors": [
+      "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+      "https://archive.ics.uci.edu/ml/machine-learning-databases/00228/smsspamcollection.zip"
+    ]
+  },
+  "processed": {
+    "path": "data\\processed\\sms_spam.csv",
+    "sha256": "167314b8c3c64ae9409ae7f5fa1f89a1e8e40628c357ea86f8e0143aeeb43704",
+    "columns": [
+      "label",
+      "label_code",
+      "text"
+    ]
+  },
+  "rows": {
+    "total": 5574,
+    "ham": 4827,
+    "spam": 747,
+    "skipped": 0
+  },
+  "label_map": {
+    "ham": 0,
+    "spam": 1
+  },
+  "notes": "Messages kept verbatim except for whitespace normalisation."
+}

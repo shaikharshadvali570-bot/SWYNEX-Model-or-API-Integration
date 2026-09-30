@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spamguard-ai"
+version = "1.0.0"
+description = "Explainable SMS/e-mail spam & phishing detector built with scikit-learn and Streamlit."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "SpamGuard AI contributors" }]
+keywords = ["spam", "phishing", "scikit-learn", "streamlit", "nlp", "security"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+]
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q --strict-markers"
+filterwarnings = ["ignore::DeprecationWarning:sklearn.*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

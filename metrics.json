@@ -1,0 +1,231 @@
+{
+  "generated_at_utc": "2026-09-29T05:38:14+00:00",
+  "model_version": "1.0.0",
+  "algorithm": "Tfidf(word 1-2 + char 3-5) -> LogisticRegression(balanced)",
+  "best_C": 3.0,
+  "cv_f1_mean": 0.9557,
+  "cv_f1_std": 0.001,
+  "test_size": 0.2,
+  "random_state": 42,
+  "fit_seconds": 8.99,
+  "samples_total": 5574,
+  "samples_train": 4459,
+  "samples_test": 1115,
+  "dataset_summary": {
+    "total": 5574,
+    "ham": 4827,
+    "spam": 747,
+    "spam_pct": 13.4,
+    "avg_chars": 80,
+    "class_weight_ratio": 6.46
+  },
+  "threshold": 0.5,
+  "test_metrics": {
+    "accuracy": 0.9946,
+    "precision": 1.0,
+    "recall": 0.9597,
+    "f1": 0.9795,
+    "roc_auc": 0.9958,
+    "pr_auc": 0.9888
+  },
+  "confusion_matrix": [
+    [
+      966,
+      0
+    ],
+    [
+      6,
+      143
+    ]
+  ],
+  "top_features": [
+    {
+      "feature": "number",
+      "weight": 7.1352
+    },
+    {
+      "feature": "url",
+      "weight": 4.4915
+    },
+    {
+      "feature": "call number",
+      "weight": 2.5672
+    },
+    {
+      "feature": "FREE",
+      "weight": 2.5514
+    },
+    {
+      "feature": "xt ",
+      "weight": 2.3259
+    },
+    {
+      "feature": " \u00e2\u00a3",
+      "weight": 2.3047
+    },
+    {
+      "feature": "to",
+      "weight": 2.207
+    },
+    {
+      "feature": "Txt",
+      "weight": 2.1936
+    },
+    {
+      "feature": "Call",
+      "weight": 2.1098
+    },
+    {
+      "feature": "50p",
+      "weight": 2.0479
+    },
+    {
+      "feature": "150",
+      "weight": 2.0304
+    },
+    {
+      "feature": "Reply",
+      "weight": 1.9754
+    },
+    {
+      "feature": " i ",
+      "weight": -2.3772
+    },
+    {
+      "feature": "me",
+      "weight": -1.7596
+    },
+    {
+      "feature": "my",
+      "weight": -1.6218
+    },
+    {
+      "feature": ".. ",
+      "weight": -1.6016
+    },
+    {
+      "feature": "...",
+      "weight": -1.4096
+    },
+    {
+      "feature": "... ",
+      "weight": -1.2031
+    },
+    {
+      "feature": "it",
+      "weight": -1.1849
+    },
+    {
+      "feature": "that",
+      "weight": -1.1333
+    },
+    {
+      "feature": "da",
+      "weight": -1.1019
+    },
+    {
+      "feature": "gt",
+      "weight": -1.087
+    },
+    {
+      "feature": "lt",
+      "weight": -1.0821
+    },
+    {
+      "feature": "Ok",
+      "weight": -1.0734
+    }
+  ],
+  "hardest_test_rows": [
+    {
+      "text": "Get ur 1st RINGTONE FREE NOW! Reply to this msg with TONE. Gr8 TOP 20 tones to your phone every week just \u00c2\u00a31.50 per wk ",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9997
+    },
+    {
+      "text": "You have WON a guaranteed \u00c2\u00a31000 cash or a \u00c2\u00a32000 prize. To claim yr prize call our customer service representative on 0",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9991
+    },
+    {
+      "text": "You have WON a guaranteed \u00c2\u00a31000 cash or a \u00c2\u00a32000 prize. To claim yr prize call our customer service representative on 0",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9991
+    },
+    {
+      "text": "Yes. Please leave at &lt;#&gt; . So that at &lt;#&gt; we can leave",
+      "actual": 0,
+      "pred": 0,
+      "p_spam": 0.0016
+    },
+    {
+      "text": "URGENT! Your Mobile number has been awarded with a \u00c2\u00a32000 prize GUARANTEED. Call 09061790121 from land line. Claim 3030.",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9983
+    },
+    {
+      "text": "You are a \u00c2\u00a31000 winner or Guaranteed Caller Prize, this is our Final attempt to contact you! To Claim Call 09071517866 ",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9982
+    },
+    {
+      "text": "URGENT! You have won a 1 week FREE membership in our \u00c2\u00a3100,000 Prize Jackpot! Txt the word: CLAIM to No: 81010 T&C www.d",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9979
+    },
+    {
+      "text": "I can make it up there, squeezed &lt;#&gt; bucks out of my dad",
+      "actual": 0,
+      "pred": 0,
+      "p_spam": 0.0023
+    },
+    {
+      "text": "You have won a guaranteed \u00c2\u00a3200 award or even \u00c2\u00a31000 cashto claim UR award call free on 08000407165 (18+) 2 stop getstop",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9974
+    },
+    {
+      "text": "FreeMsg: Fancy a flirt? Reply DATE now & join the UKs fastest growing mobile dating service. Msgs rcvd just 25p to optou",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9974
+    },
+    {
+      "text": "I have printed it oh. So &lt;#&gt; come upstairs",
+      "actual": 0,
+      "pred": 0,
+      "p_spam": 0.0027
+    },
+    {
+      "text": "FreeMSG You have been awarded a FREE mini DIGITAL CAMERA, just reply SNAP to collect your prize! (quizclub Opt out? Stop",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9972
+    },
+    {
+      "text": "Free 1st week entry 2 TEXTPOD 4 a chance 2 win 40GB iPod or \u00c2\u00a3250 cash every wk. Txt VPOD to 81303 Ts&Cs www.textpod.net",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9972
+    },
+    {
+      "text": "+123 Congratulations - in this week's competition draw u have won the \u00c2\u00a31450 prize to claim just call 09050002311 b42807",
+      "actual": 1,
+      "pred": 1,
+      "p_spam": 0.9971
+    },
+    {
+      "text": "&lt;#&gt; am I think? Should say on syllabus",
+      "actual": 0,
+      "pred": 0,
+      "p_spam": 0.003
+    }
+  ]
+}

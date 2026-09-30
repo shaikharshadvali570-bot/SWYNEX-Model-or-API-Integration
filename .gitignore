@@ -1,0 +1,49 @@
+# --- Secrets: never commit credentials --------------------------------------#
+.env
+.env.*
+!.env.example
+
+# --- Python ------------------------------------------------------------------#
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# --- Test / tooling caches ---------------------------------------------------#
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Editors / OS ------------------------------------------------------------#
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Generated model artifacts (recreate with: python -m app.cli train) ------#
+models/*.joblib
+models/*.pkl
+
+# --- Generated reports (recreate with: python -m app.cli train) --------------#
+reports/metrics.json
+reports/*.csv
+
+# --- Dataset archive (re-fetch with: python scripts/download_data.py) --------#
+data/raw/_extracted/
+data/raw/sms_spam_collection.zip
+data/**/*_scored.csv
+
+# --- Logs / scratch ----------------------------------------------------------#
+*.log
+_probe/
+_lr_session.py
